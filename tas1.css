@@ -1,0 +1,128 @@
+* General Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Body Styling */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #fff;
+    color: #000;
+}
+
+/* Header Styling */
+header {
+    background-color: #00FFFF;
+    padding: 10px 0;
+    text-align: center;
+}
+
+header a {
+    color: #000;
+    text-decoration: none;
+    margin: 0 15px;
+    font-weight: bold;
+}
+
+header .search-bar {
+    float: right;
+    margin-top: -30px;
+}
+
+header .search-bar input {
+    padding: 5px;
+}
+
+/* Main Section Styling */
+.main-content {
+    padding: 20px;
+    text-align: center;
+}
+
+.main-content h1 {
+    font-size: 24px;
+    margin-bottom: 20px;
+}
+
+.main-content .portfolio-grid {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
+}
+
+.main-content .portfolio-grid .portfolio-item {
+    width: calc(33.33% - 20px);
+    border: 1px solid #ddd;
+    padding: 10px;
+}
+
+.main-content .portfolio-grid .portfolio-item img {
+    max-width: 100%;
+    height: auto;
+}
+
+/* Footer Styling */
+footer {
+    background-color: #f8f8f8;
+    padding: 20px;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+footer .footer-section {
+    width: calc(33.33% - 20px);
+    margin-bottom: 20px;
+}
+
+footer .footer-section h2 {
+    font-size: 18px;
+    margin-bottom: 10px;
+}
+
+footer .footer-section p, 
+footer .footer-section a {
+    font-size: 14px;
+    color: #000;
+    text-decoration: none;
+}
+
+footer .footer-section a:hover {
+    text-decoration: underline;
+}
+
+footer .social {
+    text-align: center;
+}
+
+footer .social p {
+    margin-bottom: 10px;
+}
+
+footer .social a {
+    display: block;
+    margin-bottom: 5px;
+}
+
+/* Responsiveness */
+@media (max-width: 768px) {
+    .main-content .portfolio-grid .portfolio-item,
+    footer .footer-section {
+        width: calc(50% - 20px);
+    }
+}
+
+@media (max-width: 480px) {
+    header .search-bar {
+        float: none;
+        margin-top: 10px;
+    }
+
+    .main-content .portfolio-grid .portfolio-item,
+    footer .footer-section {
+        width: 100%;
+    }
+}
